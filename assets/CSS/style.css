@@ -136,3 +136,23 @@ header img:hover {
     text-align: center;
     font-size: 1rem;
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-skills {
+    width: 40px;
+}
