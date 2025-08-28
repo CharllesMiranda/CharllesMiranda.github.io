@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;    
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 0.6rem;
+
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+header nav a {
+    font-size: 1rem;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+    transform: scale(1.1);
+    background-color: orangered;
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+}
+
+header nav a:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2 {
+    font-size: 1.25rem;
+}
+
+.container h3 {
+    font-size: 1.1rem;
+}
+
+header img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 1rem 0;
+
+    border: 4px solid rgb(255, 94, 0); /* borda laranja */
+    box-shadow: 0 4px 15px rgba(220, 78, 17, 0.5); /* sombra suave laranja */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* efeito hover */
+}
+
+header img:hover {
+    transform: scale(1.1);       /* aumenta levemente */
+    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.7); /* sombra mais intensa no hover */
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 6rem 0;
+}
+
+.home p {
+   text-align: center;
+   font-size: 1.2rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.my-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-size: 1.5rem;
+}
+
+.box-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-project h2 {
+    margin-left: 1rem;
+    font-size: 1.7rem;
+}
+
+.img-project {
+    display: flex;
+    max-width: 375px;
+    width: 95%;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+}
+
+/* .img-project:hover {
+    transform: scale(1.2);
+} */
+
+.box-project p {
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+}
