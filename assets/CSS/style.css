@@ -6,8 +6,12 @@
     list-style: none;
 }
 
-html {
+body {
+    display: flex;
+    flex-direction: column;
     scroll-behavior: smooth;
+    background-color: rgb(217, 225, 233);
+    padding-top: 3.75rem;
 }
 
 header nav {
@@ -19,10 +23,12 @@ header nav {
     cursor: pointer;
     padding: 0.5rem 0.6rem;
 
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
     background-color: #fff;
-    z-index: 2;
 }
 
 header nav a {
@@ -91,6 +97,7 @@ header img:hover {
 .home p {
    text-align: center;
    font-size: 1.2rem;
+   padding: 1rem;
 }
 
 .projects {
@@ -142,8 +149,10 @@ header img:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 2rem;
     margin-top: 3rem;
+    padding: 1rem;
 }
 
 .skills {
@@ -155,4 +164,32 @@ header img:hover {
 
 .img-skills {
     width: 40px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    margin: 3rem 0 5rem 0;
+
+}
+
+.list-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0 0;
+}
+
+.icon-contact {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.icon-contact:hover {
+    transform: scale(1.2);
 }
