@@ -266,6 +266,7 @@ header img:hover {
 
     .about p {
         margin: 0 1.5rem;
+        max-width: 900px;
     }
 }
 
